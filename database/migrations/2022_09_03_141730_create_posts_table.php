@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('community_id')->constrained();
+            $table->string('title');
             $table->string('slug')->unique();
             $table->string('url');
             $table->text('description');
